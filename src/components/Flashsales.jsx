@@ -1,14 +1,15 @@
 import styled from "styled-components";
-import { popularProducts } from "../data";
-import Product from "./Product";
+import { flashsales } from "../data";
 import { mobile } from "../responsive";
+import FlashsalesItem from "./FlashsalesItem";
 import { Link } from "react-router-dom";
 
 const Container = styled.div`
-    padding: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+  ${mobile({ padding: "0px", flexDirection:"column" })}
+
 `;
 const ContainerHead = styled.div`
   padding: 0 30px;
@@ -34,20 +35,20 @@ const ContainerHeadRight = styled.div`
   text-decoration: underline;
 `;
 
-const Products = () => {
+const Flashsales = () => {
   return (
     <>
       <ContainerHead>
-        <ContainerHeadLeft>Popilar Products</ContainerHeadLeft>
-        <ContainerHeadRight><Link to = "/categories" style={{color: "black"}}>See All</Link></ContainerHeadRight>
+        <ContainerHeadLeft>Flash Sales</ContainerHeadLeft>
+        <ContainerHeadRight><Link to = "/categories" style={{color: "black"}}>Explore All</Link></ContainerHeadRight>
       </ContainerHead>
       <Container>
-        {popularProducts.map((item) => (
-          <Product item={item} key={item.id} />
+        {flashsales.map((item) => (
+          <FlashsalesItem item={item} key={item.id} />
         ))}
       </Container>
-    </>
+    </>  
   );
 };
 
-export default Products;
+export default Flashsales;

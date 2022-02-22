@@ -77,7 +77,15 @@ const Button = styled.button`
   padding: 10px;
   font-size: 20px;
   background-color: transparent;
+  border: none;
   cursor: pointer;
+  color: #FF8E00;
+  font-weight: Bold;
+
+  &:hover {
+      background-color: #00ab55;
+      color:#fff;
+    }
 `;
 
 const Slider = () => {

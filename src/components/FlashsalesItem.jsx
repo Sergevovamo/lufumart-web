@@ -44,10 +44,10 @@ const Button = styled.button`
     &:hover {
       background-color: #fff;
       color:#00ab55;
-  }
+    }
 `;
 
-const CategoryItem = ({ item }) => {
+const FlashsalesItem = ({ item }) => {
   return (
     <Container>
       <Image src={item.img} />
@@ -59,4 +59,4 @@ const CategoryItem = ({ item }) => {
   );
 };
 
-export default CategoryItem;
+export default FlashsalesItem;

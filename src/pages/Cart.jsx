@@ -1,5 +1,6 @@
 import AddOutlinedIcon from '@mui/icons-material/AddOutlined';
 import RemoveOutlinedIcon from '@mui/icons-material/RemoveOutlined';
+import DeleteOutlineOutlinedIcon from '@mui/icons-material/DeleteOutlineOutlined';
 import styled from "styled-components";
 import Announcement from "../components/Announcement";
 import Footer from "../components/Footer";
@@ -106,7 +107,7 @@ const ProductAmountContainer = styled.div`
 
 const ProductAmount = styled.div`
   font-size: 24px;
-  margin: 5px;
+  margin: 0 20px;
   ${mobile({ margin: "5px 15px" })}
 `;
 
@@ -189,11 +190,12 @@ const Cart = () => {
               </ProductDetail>
               <PriceDetail>
                 <ProductAmountContainer>
-                  <AddOutlinedIcon />
+                  <AddOutlinedIcon style={{cursor: "pointer", color: "#FF8E00"}} />
                   <ProductAmount>2</ProductAmount>
-                  <RemoveOutlinedIcon />
+                  <RemoveOutlinedIcon style={{cursor: "pointer", color: "#FF8E00"}} />
                 </ProductAmountContainer>
                 <ProductPrice>$ 30</ProductPrice>
+                <DeleteOutlineOutlinedIcon style={{marginTop: "20px", cursor: "pointer", color: "#FF8E00"}}/>
               </PriceDetail>
             </Product>
             <Hr />
@@ -215,11 +217,12 @@ const Cart = () => {
               </ProductDetail>
               <PriceDetail>
                 <ProductAmountContainer>
-                  <AddOutlinedIcon />
+                <AddOutlinedIcon style={{cursor: "pointer", color: "#FF8E00"}} />
                   <ProductAmount>1</ProductAmount>
-                  <RemoveOutlinedIcon />
+                  <RemoveOutlinedIcon style={{cursor: "pointer", color: "#FF8E00"}} />
                 </ProductAmountContainer>
                 <ProductPrice>$ 20</ProductPrice>
+                <DeleteOutlineOutlinedIcon style={{marginTop: "20px", cursor: "pointer", color: "#FF8E00"}}/>
               </PriceDetail>
             </Product>
           </Info>
