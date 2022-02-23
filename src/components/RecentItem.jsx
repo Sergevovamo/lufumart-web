@@ -4,7 +4,7 @@ import { mobile } from "../responsive";
 const Container = styled.div`
   flex: 1;
   margin: 3px;
-  height: 50vh;
+  height: 30vh;
   position: relative;
 `;
 
@@ -30,13 +30,14 @@ const Info = styled.div`
 `;
 
 const Title = styled.h1`
+    font-size: 1em;
     color:white;
     margin-bottom: 20px;
 `;
 
 const Button = styled.button`
     border:none;
-    padding: 10px;
+    padding: 3px;
     background-color: #00ab55;
     color:#fff;
     cursor: pointer;
@@ -48,16 +49,16 @@ const Button = styled.button`
   }
 `;
 
-const CategoryItem = ({ item }) => {
+const RecentItem = ({ item }) => {
   return (
     <Container>
       <Image src={item.img} />
       <Info>
         <Title>{item.title}</Title>
-        <Button>SHOP NOW</Button>
+        <Button>VIEW AGAIN</Button>
       </Info>
     </Container>
   );
 };
 
-export default CategoryItem;
+export default RecentItem;

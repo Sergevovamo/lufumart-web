@@ -1,22 +1,6 @@
 import styled from "styled-components";
 import { mobile } from "../responsive";
 
-const Container = styled.div`
-  flex: 1;
-  margin: 3px;
-  height: 50vh;
-  position: relative;
-`;
-
-const Image = styled.img`
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 5%;
-  ${mobile({ height: "20vh" })}
-
-`;
-
 const Info = styled.div`
   position: absolute;
   top: 0;
@@ -29,9 +13,30 @@ const Info = styled.div`
   justify-content: center;
 `;
 
-const Title = styled.h1`
+const Container = styled.div`
+  flex: 1;
+  margin: 10px;
+  height: 40vh;
+  position: relative;
+
+  &:hover ${Info}{
+    opacity: 1;
+  }
+`;
+
+const Image = styled.img`
+  width: 100%;
+  height: 100%;
+  opacity: 60%;
+  object-fit: cover;
+  ${mobile({ height: "20vh" })}
+  border-radius: 5%;
+`;
+
+const Title = styled.h4`
     color:white;
-    margin-bottom: 20px;
+    font-size: 1em;
+    margin-bottom: 1em;
 `;
 
 const Button = styled.button`
@@ -48,16 +53,16 @@ const Button = styled.button`
   }
 `;
 
-const CategoryItem = ({ item }) => {
+const SellerItem = ({ item }) => {
   return (
     <Container>
       <Image src={item.img} />
       <Info>
         <Title>{item.title}</Title>
-        <Button>SHOP NOW</Button>
+        <Button>VISIT SELLER</Button>
       </Info>
     </Container>
   );
 };
 
-export default CategoryItem;
+export default SellerItem;

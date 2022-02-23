@@ -1,65 +1,93 @@
 export const sliderItems = [
     {
       id: 1,
-      img: "https://i.ibb.co/DG69bQ4/2.png",
+      img: "https://res.cloudinary.com/yugillc/image/upload/q_auto/v1645554697/lufu-imgs/banner1_nte7u3.png",
       title: "THE BIG SALE IS ON",
       desc: "LUFUMART IS BRINGING ON THE BEST DEALS THIS FEBRUARY FOY YOU TO GRAB.",
       bg: "fcf1ed",
     },
     {
       id: 2,
-      img: "https://i.ibb.co/DG69bQ4/2.png",
+      img: "https://res.cloudinary.com/yugillc/image/upload/q_auto/v1645554762/lufu-imgs/banner2_slh8rm.png",
       title: "AUTUMN COLLECTION",
       desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
       bg: "fcf1ed",
     },
     {
       id: 3,
-      img: "https://i.ibb.co/cXFnLLV/3.png",
+      img: "https://res.cloudinary.com/yugillc/image/upload/q_auto/v1645554697/lufu-imgs/banner1_nte7u3.png",
       title: "LOUNGEWEAR LOVE",
       desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
       bg: "fbf0f4",
-    },
+    }
   ];
 
   export const categories = [
     {
       id: 1,
-      img: "https://images.pexels.com/photos/5886041/pexels-photo-5886041.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      title: "SHIRT STYLE!",
+      img: "https://res.cloudinary.com/yugillc/image/upload/q_auto/v1645563005/lufu-imgs/electronics_lvqcoa.jpg",
+      title: "ELECTRONICS",
     },
     {
       id: 2,
-      img: "https://images.pexels.com/photos/2983464/pexels-photo-2983464.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      title: "LOUNGEWEAR LOVE",
+      img: "https://res.cloudinary.com/yugillc/image/upload/q_auto/v1645563128/lufu-imgs/clothes_sddyui.jpg",
+      title: "CLOTHING",
     },
     {
       id: 3,
-      img: "https://images.pexels.com/photos/5480696/pexels-photo-5480696.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      title: "LIGHT JACKETS",
+      img: "https://res.cloudinary.com/yugillc/image/upload/q_auto/v1645570802/lufu-imgs/bed-drawers_bn6nn5.jpg",
+      title: "FURNITURE",
     },
     {
       id: 4,
-      img: "https://images.pexels.com/photos/5886041/pexels-photo-5886041.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      title: "LIGHT JACKETS",
-    },
+      img: "https://res.cloudinary.com/yugillc/image/upload/q_auto/v1645572388/lufu-imgs/home-deco_cyzwzc.jpg",
+      title: "HOME DECO",
+    }
   ];
 
   export const flashsales = [
     {
       id: 1,
-      img: "https://images.pexels.com/photos/5886041/pexels-photo-5886041.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      title: "SHIRT STYLE!",
+      img: "https://res.cloudinary.com/yugillc/image/upload/q_auto/v1645560364/lufu-imgs/macbook_umirxd.jpg",
+      title: "LAPTOPS",
     },
     {
       id: 2,
-      img: "https://images.pexels.com/photos/2983464/pexels-photo-2983464.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      title: "LOUNGEWEAR LOVE",
+      img: "https://res.cloudinary.com/yugillc/image/upload/q_auto/v1645562575/lufu-imgs/phone_iatyle.jpg",
+      title: "SMARTPHONES",
+    },
+    {
+      id: 3,
+      img: "https://res.cloudinary.com/yugillc/image/upload/q_auto/v1645561671/lufu-imgs/converse_z6j3nn.jpg",
+      title: "SHOES",
+    }
+  ];
+
+  export const sellers = [
+    {
+      id: 1,
+      img: "https://res.cloudinary.com/yugillc/image/upload/q_auto/v1645561024/lufu-imgs/bulb_pqwr56.jpg",
+      title: "ORBCOMM SYSTEM",
+    },
+    {
+      id: 2,
+      img: "https://res.cloudinary.com/yugillc/image/upload/q_auto/v1645562846/lufu-imgs/jewelry_tc05gh.jpg",
+      title: "JIVANJE",
     },
     {
       id: 3,
       img: "https://images.pexels.com/photos/5480696/pexels-photo-5480696.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      title: "LIGHT JACKETS",
+      title: "SHOP-WISE",
+    },
+    {
+      id: 4,
+      img: "https://res.cloudinary.com/yugillc/image/upload/q_auto/v1645563116/lufu-imgs/babyclothes_pci229.jpg",
+      title: "CLOTHES ARENA!",
+    },
+    {
+      id: 5,
+      img: "https://res.cloudinary.com/yugillc/image/upload/q_auto/v1645562520/lufu-imgs/projector_cbkjjx.jpg",
+      title: "HOUSE ELECTRONICS",
     },
   ];
 
@@ -95,5 +123,70 @@ export const sliderItems = [
     {
       id:8,
       img:"https://www.pngarts.com/files/3/Women-Jacket-PNG-High-Quality-Image.png",
-    },
+    }
   ]
+
+  export const topselling = [
+    {
+      id: 1,
+      img: "https://res.cloudinary.com/yugillc/image/upload/q_auto/v1645562840/lufu-imgs/makeup_g10a3y.jpg",
+      title: "Lufu Make-Up",
+    },
+    {
+      id: 2,
+      img: "https://res.cloudinary.com/yugillc/image/upload/q_auto/v1645562487/lufu-imgs/vegetables_vcmd36.jpg",
+      title: "Lufu Fruits",
+    },
+    {
+      id: 3,
+      img: "https://res.cloudinary.com/yugillc/image/upload/v1645580351/lufu-imgs/samsung-phone_xvkggv.jpg",
+      title: "Samsung S21",
+    },
+    {
+      id: 4,
+      img: "https://res.cloudinary.com/yugillc/image/upload/v1645580382/lufu-imgs/watch3_wmtp44.jpg",
+      title: "Rolex S310",
+    }
+  ];
+  export const recent = [
+    {
+      id: 1,
+      img: "https://res.cloudinary.com/yugillc/image/upload/v1645570912/lufu-imgs/gun_yguubc.jpg",
+      title: "Glock 23",
+    },
+    {
+      id: 2,
+      img: "https://res.cloudinary.com/yugillc/image/upload/v1645562702/lufu-imgs/beverages_w3ztc5.jpg",
+      title: "Bever Soda",
+    },
+    {
+      id: 3,
+      img: "https://res.cloudinary.com/yugillc/image/upload/q_auto/v1645561611/lufu-imgs/shoes-women_qtsxls.jpg",
+      title: "Women Stills",
+    },
+    {
+      id: 4,
+      img: "https://res.cloudinary.com/yugillc/image/upload/q_auto/v1645561842/lufu-imgs/rick-owens_gwybom.jpg",
+      title: "Rick Owens",
+    },
+    {
+      id: 5,
+      img: "https://res.cloudinary.com/yugillc/image/upload/q_auto/v1645562840/lufu-imgs/makeup_g10a3y.jpg",
+      title: "Lufu Make-Up",
+    },
+    {
+      id: 6,
+      img: "https://res.cloudinary.com/yugillc/image/upload/q_auto/v1645562487/lufu-imgs/vegetables_vcmd36.jpg",
+      title: "Lufu Fruits",
+    },
+    {
+      id: 7,
+      img: "https://res.cloudinary.com/yugillc/image/upload/v1645561024/lufu-imgs/bulb_pqwr56.jpg",
+      title: "Phili Bulb",
+    },
+    {
+      id: 8,
+      img: "https://res.cloudinary.com/yugillc/image/upload/v1645561892/lufu-imgs/farm-tractor_loxhr8.jpg",
+      title: "Tractor Wheels",
+    }
+  ];

@@ -38,7 +38,7 @@ const Products = () => {
   return (
     <>
       <ContainerHead>
-        <ContainerHeadLeft>Popilar Products</ContainerHeadLeft>
+        <ContainerHeadLeft>Popular Products</ContainerHeadLeft>
         <ContainerHeadRight><Link to = "/categories" style={{color: "black"}}>See All</Link></ContainerHeadRight>
       </ContainerHead>
       <Container>

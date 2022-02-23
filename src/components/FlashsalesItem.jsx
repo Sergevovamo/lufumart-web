@@ -3,7 +3,7 @@ import { mobile } from "../responsive";
 
 const Container = styled.div`
   flex: 1;
-  margin: 3px;
+  margin: 10px;
   height: 50vh;
   position: relative;
 `;
@@ -12,6 +12,7 @@ const Image = styled.img`
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border-radius: 5%;
   ${mobile({ height: "20vh" })}
 
 `;

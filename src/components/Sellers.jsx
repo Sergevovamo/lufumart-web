@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import { categories } from "../data";
+import { sellers } from "../data";
 import { mobile } from "../responsive";
-import CategoryItem from "./CategoryItem";
+import SellerItem from "./SellerItem";
 import { Link } from "react-router-dom";
 
 const Container = styled.div`
@@ -35,20 +35,20 @@ const ContainerHeadRight = styled.div`
   text-decoration: underline;
 `;
 
-const Categories = () => {
+const Sellers = () => {
   return (
     <>
       <ContainerHead>
-        <ContainerHeadLeft>Categories</ContainerHeadLeft>
+        <ContainerHeadLeft>Popular Sellers</ContainerHeadLeft>
         <ContainerHeadRight><Link to = "/categories" style={{color: "black"}}>See All</Link></ContainerHeadRight>
       </ContainerHead>
       <Container>
-        {categories.map((item) => (
-          <CategoryItem item={item} key={item.id} />
+        {sellers.map((item) => (
+          <SellerItem item={item} key={item.id} />
         ))}
       </Container>
     </>  
   );
 };
 
-export default Categories;
+export default Sellers;
