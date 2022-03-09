@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { topselling } from "../data";
 import { mobile } from "../responsive";
 import TopSellingItem from "./TopSellingItem";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 const Container = styled.div`
   display: flex;
@@ -27,20 +27,20 @@ const ContainerHeadLeft = styled.div`
   /* cursor: pointer; */
   font-weight: bold;
 `;
-const ContainerHeadRight = styled.div`
-  ${mobile({ padding: "0px", flexDirection:"column" })}
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-  text-decoration: underline;
-`;
+// const ContainerHeadRight = styled.div`
+//   ${mobile({ padding: "0px", flexDirection:"column" })}
+//   display: flex;
+//   align-items: center;
+//   cursor: pointer;
+//   text-decoration: underline;
+// `;
 
 const TopSelling = () => {
   return (
     <>
       <ContainerHead>
         <ContainerHeadLeft>Top Seelling Products</ContainerHeadLeft>
-        <ContainerHeadRight><Link to = "/categories" style={{color: "black"}}>See All</Link></ContainerHeadRight>
+        {/* <ContainerHeadRight><Link to = "/categories" style={{color: "black"}}>See All</Link></ContainerHeadRight> */}
       </ContainerHead>
       <Container>
         {topselling.map((item) => (

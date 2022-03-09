@@ -40,7 +40,7 @@ const Sellers = () => {
     <>
       <ContainerHead>
         <ContainerHeadLeft>Popular Sellers</ContainerHeadLeft>
-        <ContainerHeadRight><Link to = "/categories" style={{color: "black"}}>See All</Link></ContainerHeadRight>
+        <ContainerHeadRight><Link to = "/sellers" style={{color: "black"}}>See All</Link></ContainerHeadRight>
       </ContainerHead>
       <Container>
         {sellers.map((item) => (

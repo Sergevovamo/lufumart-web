@@ -126,12 +126,52 @@ const DropdownMenu = styled.div`
 `;
 const DropdownContent = styled.div`
   display: none;
+  flex-direction: row;
   position: absolute;
   background-color: #f9f9f9;
+  border-radius: 2;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0, 2);
   padding: 12px 16px;
   z-index: 1;
+`;
+
+const NavBtn = styled.button`
+  font-weight: bold;
+  background: none;
+  font-size: 16px;
+  border: none;
+
+  &:hover {
+    color: #FF8E00;
+    text-decoration: #FF8E00;
+  }
+`;
+
+const DropdownItem = styled.a`
+  color: black;
+  padding: 5px 16px;
+  text-decoration: none;
+  display: block;
+  font-weight: 300;
+  font-size: small;
+
+  &:hover {
+    background-color: #FF8E00;
+  }
+`;
+
+const DropdownItemTitle = styled.div`
+  &:hover {
+    display: block;
+    >DropdownItemContent {
+        display: block;
+    }
+  }
+`;
+
+const DropdownItemContent = styled.div`
+  display: none;
 `;
 
 const Navbar = () => {
@@ -145,9 +185,30 @@ const Navbar = () => {
           <MenuItem>
             <CategoryOutlinedIcon style={{marginRight:"5px"}} />
             <DropdownMenu>
-              <span><Link to = "/" style={{textDecoration: "none", color:"black"}}>Categories</Link></span>
+              <span><NavBtn><Link to = "/" style={{textDecoration: "none", color:"black"}}>Categories</Link></NavBtn></span>
               <DropdownContent>
-                <Link to="/" style={{textDecoration: "none", color:"black"}}>Dropdown here</Link>
+                <DropdownItem><Link to="/product-list" style={{textDecoration: "none", color:"black"}}>
+                  <DropdownItemTitle>Electronics</DropdownItemTitle>
+                  <DropdownItemContent>
+                    My name is him
+                  </DropdownItemContent>
+                </Link></DropdownItem>
+                <DropdownItem><Link to="/product-list" style={{textDecoration: "none", color:"black"}}>Clothing, Shoes</Link></DropdownItem>
+                <DropdownItem><Link to="/product-list" style={{textDecoration: "none", color:"black"}}>Home & Furniture</Link></DropdownItem>
+                <DropdownItem><Link to="/product-list" style={{textDecoration: "none", color:"black"}}>Baby Products</Link></DropdownItem>
+                <DropdownItem><Link to="/product-list" style={{textDecoration: "none", color:"black"}}>Health & Beauty</Link></DropdownItem>
+                <DropdownItem><Link to="/product-list" style={{textDecoration: "none", color:"black"}}>Travel</Link></DropdownItem>
+                <DropdownItem><Link to="/product-list" style={{textDecoration: "none", color:"black"}}>Antiques</Link></DropdownItem>
+                <DropdownItem><Link to="/product-list" style={{textDecoration: "none", color:"black"}}>Camera & Photo</Link></DropdownItem>
+                <DropdownItem><Link to="/product-list" style={{textDecoration: "none", color:"black"}}>Movies & TV</Link></DropdownItem>
+                <DropdownItem><Link to="/product-list" style={{textDecoration: "none", color:"black"}}>Accesories</Link></DropdownItem>
+                <DropdownItem><Link to="/product-list" style={{textDecoration: "none", color:"black"}}>Sporting Goods</Link></DropdownItem>
+                <DropdownItem><Link to="/product-list" style={{textDecoration: "none", color:"black"}}>Jewellery & Watches</Link></DropdownItem>
+                <DropdownItem><Link to="/product-list" style={{textDecoration: "none", color:"black"}}>Headphones</Link></DropdownItem>
+                <DropdownItem><Link to="/product-list" style={{textDecoration: "none", color:"black"}}>Data Storage</Link></DropdownItem>
+                <DropdownItem><Link to="/product-list" style={{textDecoration: "none", color:"black"}}>Laptops</Link></DropdownItem>
+                <DropdownItem><Link to="/product-list" style={{textDecoration: "none", color:"black"}}>Clothing</Link></DropdownItem>
+                <DropdownItem><Link to="/product-list" style={{textDecoration: "none", color:"black"}}>Fashion</Link></DropdownItem>
               </DropdownContent>
             </DropdownMenu>
           </MenuItem>
@@ -155,9 +216,9 @@ const Navbar = () => {
             <CasinoOutlinedIcon style={{marginRight:"5px"}} />
             <DropdownMenu>
               <span><Link to = "/" style={{textDecoration: "none", color:"black"}}>Services</Link></span>
-              <DropdownContent>
+              {/* <DropdownContent>
                 <Link to="/" style={{textDecoration: "none", color:"black"}}>Dropdown here</Link>
-              </DropdownContent>
+              </DropdownContent> */}
             </DropdownMenu>
           </MenuItem>
         </Left>
@@ -172,9 +233,10 @@ const Navbar = () => {
           <MenuItem>
             <AccountCircleOutlinedIcon style={{marginRight:"5px"}} />
             <DropdownMenu>
-              <span><Link to = "/" style={{textDecoration: "none", color:"black"}}>Account</Link></span>
+              <span><NavBtn><Link to = "/" style={{textDecoration: "none", color:"black"}}>Account</Link></NavBtn></span>
               <DropdownContent>
-                <Link to="/" style={{textDecoration: "none", color:"black"}}>Dropdown here</Link>
+                <DropdownItem><Link to="/register" style={{textDecoration: "none", color:"black"}}>Register</Link></DropdownItem>
+                <DropdownItem><Link to="/login" style={{textDecoration: "none", color:"black"}}>Login</Link></DropdownItem>
               </DropdownContent>
             </DropdownMenu>
           </MenuItem>

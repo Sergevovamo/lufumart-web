@@ -39,7 +39,7 @@ const Products = () => {
     <>
       <ContainerHead>
         <ContainerHeadLeft>Popular Products</ContainerHeadLeft>
-        <ContainerHeadRight><Link to = "/categories" style={{color: "black"}}>See All</Link></ContainerHeadRight>
+        <ContainerHeadRight><Link to = "/product-list" style={{color: "black"}}>See All</Link></ContainerHeadRight>
       </ContainerHead>
       <Container>
         {popularProducts.map((item) => (

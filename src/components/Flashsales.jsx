@@ -40,7 +40,7 @@ const Flashsales = () => {
     <>
       <ContainerHead>
         <ContainerHeadLeft>Flash Sales</ContainerHeadLeft>
-        <ContainerHeadRight><Link to = "/categories" style={{color: "black"}}>Explore All</Link></ContainerHeadRight>
+        <ContainerHeadRight><Link to = "/flashsales" style={{color: "black"}}>Explore All</Link></ContainerHeadRight>
       </ContainerHead>
       <Container>
         {flashsales.map((item) => (

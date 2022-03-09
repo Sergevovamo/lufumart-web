@@ -8,6 +8,8 @@ import Cart from "./pages/Cart";
 import Error from "./pages/Error";
 import Categories from "./pages/Categories";
 import Wishlist from "./pages/Wishlist";
+import Flashsales from "./pages/Flashsales";
+import Sellers from "./pages/Sellers";
 
 const App = () => {
   return (
@@ -21,6 +23,8 @@ const App = () => {
         <Route path = "/register" element={<Register/>}/>
         <Route path = "/categories" element={<Categories/>}/>
         <Route path = "/wishlist" element={<Wishlist/>}/>
+        <Route path = "/flashsales" element={<Flashsales/>}/>
+        <Route path = "/sellers" element={<Sellers/>}/>
         <Route path = "*" element={<Error/>}/>
       </Routes>
     </BrowserRouter>

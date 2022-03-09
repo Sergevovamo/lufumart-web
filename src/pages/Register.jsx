@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import Navbar from "../components/Navbar";
+import Announcement from "../components/Announcement";
 import { mobile } from "../responsive";
 
 const Container = styled.div`
@@ -8,7 +10,7 @@ const Container = styled.div`
       rgba(255, 255, 255, 0.5),
       rgba(255, 255, 255, 0.5)
     ),
-    url("https://res.cloudinary.com/yugillc/image/upload/q_auto/v1645396033/lufu-imgs/reg-bg_cjjj9m.jpg")
+    url("https://res.cloudinary.com/yugillc/image/upload/q_auto/v1646778596/lufu-imgs/beautiful2_rmgxnl.jpg")
       center;
   background-size: cover;
   display: flex;
@@ -31,7 +33,6 @@ const Title = styled.h1`
 const Form = styled.form`
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 10px;
 `;
 
 const Input = styled.input`
@@ -50,31 +51,24 @@ const Button = styled.button`
   width: 40%;
   border: none;
   padding: 15px 20px;
-  background-color: #FF8E00;
+  background-color: #00ab55;
   color: white;
   cursor: pointer;
 `;
 
-const Link = styled.a`
-  margin: 5px 0px;
-  font-size: 12px;
-  cursor: pointer;
-  letter-spacing: 0.3em;
-  &:hover{
-    text-decoration: underline;
-  }
-`;
-
 const Register = () => {
   return (
+    <>
+    <Announcement />
+    <Navbar />
     <Container>
       <Wrapper>
         <Title>CREATE AN ACCOUNT</Title>
         <Form>
           <Input placeholder="name" />
-          <Input placeholder="last name" />
-          <Input placeholder="username" />
           <Input placeholder="email" />
+          <Input placeholder="phone" />
+          <Input placeholder="gender" />
           <Input placeholder="password" />
           <Input placeholder="confirm password" />
           <Agreement>
@@ -83,9 +77,9 @@ const Register = () => {
           </Agreement>
           <Button>CREATE</Button>
         </Form>
-        <Link>LOGIN?</Link>
       </Wrapper>
     </Container>
+    </>
   );
 };
 

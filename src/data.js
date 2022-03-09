@@ -27,21 +27,25 @@ export const sliderItems = [
       id: 1,
       img: "https://res.cloudinary.com/yugillc/image/upload/q_auto/v1645563005/lufu-imgs/electronics_lvqcoa.jpg",
       title: "ELECTRONICS",
+      cat:"women"
     },
     {
       id: 2,
       img: "https://res.cloudinary.com/yugillc/image/upload/q_auto/v1645563128/lufu-imgs/clothes_sddyui.jpg",
       title: "CLOTHING",
+      cat:"coat"
     },
     {
       id: 3,
       img: "https://res.cloudinary.com/yugillc/image/upload/q_auto/v1645570802/lufu-imgs/bed-drawers_bn6nn5.jpg",
       title: "FURNITURE",
+      cat:"jeans"
     },
     {
       id: 4,
       img: "https://res.cloudinary.com/yugillc/image/upload/q_auto/v1645572388/lufu-imgs/home-deco_cyzwzc.jpg",
       title: "HOME DECO",
+      cat:"home"
     }
   ];
 
@@ -98,7 +102,7 @@ export const sliderItems = [
     },
     {
       id:2,
-      img:"https://cdn.shopify.com/s/files/1/0101/4832/products/Angela_Natural_Tee.png?v=1606780388",
+      img:"https://d3o2e4jr3mxnm3.cloudfront.net/Mens-Jake-Guitar-Vintage-Crusher-Tee_68382_1_lg.png",
     },
     {
       id:3,

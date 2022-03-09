@@ -4,6 +4,8 @@ import Announcement from "../components/Announcement";
 import Products from "../components/Products";
 import Newsletter from "../components/Newsletter";
 import Footer from "../components/Footer";
+import { useLocation } from "react-router";
+import { useState } from "react";
 import { mobile } from "../responsive";
 
 const Container = styled.div``;
@@ -36,17 +38,27 @@ const Select = styled.select`
 `;
 const Option = styled.option`
   background-color: none;
-  /* &:hover {
-    background-color: #e9f5f5;
-    transform: scale(1.1);
-  } */
 `;
 
 const ProductList = () => {
+
+  const location = useLocation();
+  const cat = location.pathname.split("/")[2];
+  const [filters, setFilters] = useState({});
+  const [sort, setSort] = useState("newest");
+
+  const handleFilters = (e) => {
+    const value = e.target.value;
+    setFilters({
+      ...filters,
+      [e.target.name]: value,
+    });
+  };
+  
   return (
     <Container>
-      <Navbar />
       <Announcement />
+      <Navbar />
       <Title>Dresses</Title>
       <FilterContainer>
         <Filter>

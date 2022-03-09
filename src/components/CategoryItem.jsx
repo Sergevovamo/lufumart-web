@@ -1,11 +1,13 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
-import { mobile } from "../responsive";
+import { small } from "../devices";
 
 const Container = styled.div`
   flex: 1;
   margin: 3px;
   height: 50vh;
   position: relative;
+  ${small({ margin: "2px", heigh: "10vh" })}
 `;
 
 const Image = styled.img`
@@ -13,8 +15,6 @@ const Image = styled.img`
   height: 100%;
   object-fit: cover;
   border-radius: 5%;
-  ${mobile({ height: "20vh" })}
-
 `;
 
 const Info = styled.div`
@@ -32,6 +32,7 @@ const Info = styled.div`
 const Title = styled.h1`
     color:white;
     margin-bottom: 20px;
+    ${small({ fontSize: "0.5em", heigh: "10vh" })}
 `;
 
 const Button = styled.button`
@@ -51,11 +52,13 @@ const Button = styled.button`
 const CategoryItem = ({ item }) => {
   return (
     <Container>
-      <Image src={item.img} />
-      <Info>
-        <Title>{item.title}</Title>
-        <Button>SHOP NOW</Button>
-      </Info>
+      <Link to={`/products/${item.cat}`}>
+        <Image src={item.img} />
+        <Info>
+          <Title>{item.title}</Title>
+          <Button>SHOP NOW</Button>
+        </Info>
+      </Link>
     </Container>
   );
 };
