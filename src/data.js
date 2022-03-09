@@ -130,6 +130,41 @@ export const sliderItems = [
     }
   ]
 
+  export const electronics = [
+    {
+      id:1,
+      img:"https://res.cloudinary.com/yugillc/image/upload/q_auto/v1645580351/lufu-imgs/samsung-phone_xvkggv.jpg",
+    },
+    {
+      id:2,
+      img:"https://res.cloudinary.com/yugillc/image/upload/q_auto/v1645580274/lufu-imgs/samsung-flipz_edldv6.jpg",
+    },
+    {
+      id:3,
+      img:"https://res.cloudinary.com/yugillc/image/upload/q_auto/v1645580435/lufu-imgs/samsung-s21_gj5qv9.jpg",
+    },
+    {
+      id:4,
+      img:"https://res.cloudinary.com/yugillc/image/upload/q_auto/v1645563005/lufu-imgs/electronics_lvqcoa.jpg",
+    },
+    {
+      id:5,
+      img:"https://res.cloudinary.com/yugillc/image/upload/q_auto/v1645562520/lufu-imgs/projector_cbkjjx.jpg",
+    },
+    {
+      id:6,
+      img:"https://res.cloudinary.com/yugillc/image/upload/q_auto/v1645562479/lufu-imgs/speaker_f3gwyh.jpg",
+    },
+    {
+      id:7,
+      img:"https://res.cloudinary.com/yugillc/image/upload/q_auto/v1645560484/lufu-imgs/charger_xrpekp.jpg",
+    },
+    {
+      id:8,
+      img:"https://res.cloudinary.com/yugillc/image/upload/q_auto/v1645560898/lufu-imgs/cable_y5gvxv.jpg",
+    }
+  ]
+
   export const topselling = [
     {
       id: 1,

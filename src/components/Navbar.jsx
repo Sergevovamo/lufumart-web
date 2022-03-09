@@ -187,7 +187,7 @@ const Navbar = () => {
             <DropdownMenu>
               <span><NavBtn><Link to = "/" style={{textDecoration: "none", color:"black"}}>Categories</Link></NavBtn></span>
               <DropdownContent>
-                <DropdownItem><Link to="/product-list" style={{textDecoration: "none", color:"black"}}>
+                <DropdownItem><Link to="/electronics" style={{textDecoration: "none", color:"black"}}>
                   <DropdownItemTitle>Electronics</DropdownItemTitle>
                   <DropdownItemContent>
                     My name is him
