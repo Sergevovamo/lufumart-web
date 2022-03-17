@@ -29,7 +29,8 @@ const Info = styled.div`
   justify-content: center;
 `;
 
-const Title = styled.h1`
+const CatTitle = styled.h1`
+    font-size:10em ;
     color:white;
     margin-bottom: 20px;
     ${small({ fontSize: "0.5em", heigh: "10vh" })}
@@ -55,7 +56,7 @@ const CategoryItem = ({ item }) => {
       <Link to={`/products/${item.cat}`}>
         <Image src={item.img} />
         <Info>
-          <Title>{item.title}</Title>
+          <CatTitle>{item.title}</CatTitle>
           <Button>SHOP NOW</Button>
         </Info>
       </Link>

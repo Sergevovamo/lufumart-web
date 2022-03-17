@@ -161,7 +161,7 @@ const Product = () => {
       <Announcement />
       <Wrapper>
         <ImgContainer>
-          <Image src="https://res.cloudinary.com/yugillc/image/upload/q_auto/v1647494365/lufu-imgs/denim_zwjgze.jpg" />
+          <Image src="https://d3o2e4jr3mxnm3.cloudfront.net/Mens-Jake-Guitar-Vintage-Crusher-Tee_68382_1_lg.png" />
         </ImgContainer>
         <InfoContainer>
           <Title>Denim Jumpsuit</Title>
