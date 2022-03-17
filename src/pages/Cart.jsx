@@ -6,6 +6,7 @@ import Announcement from "../components/Announcement";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import { mobile } from "../responsive";
+// import { useSelector } from "react-redux";
 
 const Container = styled.div``;
 
@@ -166,6 +167,8 @@ const Button = styled.button`
 `;
 
 const Cart = () => {
+  // const cart = useSelector((state) => state.cart);
+
   return (
     <Container>
       <Announcement />

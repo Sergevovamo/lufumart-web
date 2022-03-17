@@ -3,7 +3,7 @@ import styled from "styled-components";
 import Announcement from '../components/Announcement';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 const Container = styled.div`
 
@@ -215,6 +215,7 @@ function Terms() {
                 Your content, and the use of your content by us in accordance with these general terms
                 and conditions, must be accurate, complete and truthful.
             </Paragraph>
+            <Footer />
         </Container>
     </div>
   )

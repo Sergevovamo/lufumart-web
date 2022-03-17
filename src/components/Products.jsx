@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import styled from "styled-components";
-import { popularProducts } from "../data";
+// import { popularProducts } from "../data";
 import Product from "./Product";
 import { mobile } from "../responsive";
 import { Link } from "react-router-dom";
@@ -87,10 +87,17 @@ const Products = ({ cat, filters, sort }) => {
         <ContainerHeadLeft>Popular Products</ContainerHeadLeft>
         <ContainerHeadRight><Link to = "/product-list" style={{color: "black"}}>See All</Link></ContainerHeadRight>
       </ContainerHead>
-      <Container>
+      {/* <Container>
         {popularProducts.map((item) => (
           <Product item={item} key={item.id} />
         ))}
+      </Container> */}
+      <Container>
+      {cat
+        ? filteredProducts.map((item) => <Product item={item} key={item.id} />)
+        : products
+            .slice(0, 8)
+            .map((item) => <Product item={item} key={item.id} />)}
       </Container>
     </>
   );

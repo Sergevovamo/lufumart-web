@@ -123,7 +123,7 @@ const Footer = () => {
           <ListItem><Link to="/cart" style={LinkStyle}>Cart</Link></ListItem>
           <ListItem><Link to="/login" style={LinkStyle}>Login</Link></ListItem>
           <ListItem><Link to="/register" style={LinkStyle}>Register</Link></ListItem>
-          <ListItem><Link to="/terms" style={LinkStyle}>Terms</Link></ListItem>
+          <ListItem><Link to="/terms" style={LinkStyle}>Terms & Conditions</Link></ListItem>
           <ListItem><Link to="/privacy-policy" style={LinkStyle}>Privacy Policy</Link></ListItem>
           <ListItem><Link to="/" style={LinkStyle}>About</Link></ListItem>
           <ListItem><Link to="/" style={LinkStyle}>Trending</Link></ListItem>

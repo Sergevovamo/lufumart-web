@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { BrowserRouter, Routes, Route, /*Navigate*/ } from "react-router-dom";
 import Home from "./pages/Home";
 import Product from "./pages/Product";
 import ProductList from "./pages/ProductList";
@@ -15,8 +15,6 @@ import PrivacyPolicy from "./pages/PrivacyPolicy";
 import Terms from "./pages/Terms";
 
 const App = () => {
-
-  const user = true
 
   return (
     <BrowserRouter>
