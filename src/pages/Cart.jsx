@@ -27,13 +27,17 @@ const Top = styled.div`
 `;
 
 const TopButton = styled.button`
-  padding: 10px;
-  font-weight: 600;
-  cursor: pointer;
-  border: ${(props) => props.type === "filled" && "none"};
-  background-color: ${(props) =>
-    props.type === "filled" ? "#FF8E00" : "transparent"};
-  color: ${(props) => props.type === "filled" && "white"};
+  border:none;
+    padding: 10px;
+    background-color: #00ab55;
+    color:#fff;
+    cursor: pointer;
+    font-weight: 600;
+
+    &:hover {
+      background-color: #fff;
+      color:#00ab55;
+  }
 `;
 
 const TopTexts = styled.div`
@@ -148,11 +152,17 @@ const SummaryItemText = styled.span``;
 const SummaryItemPrice = styled.span``;
 
 const Button = styled.button`
-  width: 100%;
-  padding: 10px;
-  background-color: #FF8E00;
-  color: white;
-  font-weight: 600;
+    border:none;
+    padding: 10px;
+    background-color: #00ab55;
+    color:#fff;
+    cursor: pointer;
+    font-weight: 600;
+
+    &:hover {
+      background-color: #fff;
+      color:#00ab55;
+  }
 `;
 
 const Cart = () => {
@@ -168,7 +178,6 @@ const Cart = () => {
             <TopText>Items in Cart(2)</TopText>
             <TopText>Your Wishlist (0)</TopText>
           </TopTexts>
-          <TopButton type="filled">CHECKOUT NOW</TopButton>
         </Top>
         <Bottom>
           <Info>

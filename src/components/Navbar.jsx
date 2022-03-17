@@ -11,6 +11,7 @@ import {React, useState} from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { mobile } from "../responsive";
+import { useSelector } from "react-redux";
 
 const Container = styled.div`
   /* height: ${(props) => (props.extendNavbar ? "100vh" : "60px")}; */
@@ -176,6 +177,7 @@ const DropdownItemContent = styled.div`
 
 const Navbar = () => {
 
+  const quantity = useSelector(state=>state.cart.quantity)
   const [extendNavbar, setExtendNavbar] = useState(false)
   return (
     <Container extendNavbar = {extendNavbar}>
@@ -242,7 +244,7 @@ const Navbar = () => {
           </MenuItem>
           <MenuItem>
             <Link to = "/Cart">
-              <Badge badgeContent={4} color="primary">
+              <Badge badgeContent={quantity} color="primary">
                 <ShoppingCartOutlinedIcon style={{marginRight:"10px", color: "black"}} />
               </Badge>
             </Link>

@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import Navbar from "../components/Navbar";
-import Announcement from "../components/Announcement";
 import { mobile } from "../responsive";
+import Announcement from '../components/Announcement';
+import Navbar from '../components/Navbar';
 
 const Container = styled.div`
   width: 100vw;
@@ -10,7 +10,7 @@ const Container = styled.div`
       rgba(255, 255, 255, 0.5),
       rgba(255, 255, 255, 0.5)
     ),
-    url("https://res.cloudinary.com/yugillc/image/upload/q_auto/v1646778596/lufu-imgs/beautiful2_rmgxnl.jpg")
+    url("https://images.pexels.com/photos/6984661/pexels-photo-6984661.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")
       center;
   background-size: cover;
   display: flex;
@@ -59,26 +59,26 @@ const Button = styled.button`
 const Register = () => {
   return (
     <>
-    <Announcement />
-    <Navbar />
-    <Container>
-      <Wrapper>
-        <Title>CREATE AN ACCOUNT</Title>
-        <Form>
-          <Input placeholder="name" />
-          <Input placeholder="email" />
-          <Input placeholder="phone" />
-          <Input placeholder="gender" />
-          <Input placeholder="password" />
-          <Input placeholder="confirm password" />
-          <Agreement>
-            By creating an account, I consent to the processing of my personal
-            data in accordance with the <b>PRIVACY POLICY</b>
-          </Agreement>
-          <Button>CREATE</Button>
-        </Form>
-      </Wrapper>
-    </Container>
+        <Announcement />
+        <Navbar />
+        <Container>
+            <Wrapper>
+                <Title>CREATE AN ACCOUNT</Title>
+                <Form>
+                <Input placeholder="name" />
+                <Input placeholder="last name" />
+                <Input placeholder="username" />
+                <Input placeholder="email" />
+                <Input placeholder="password" />
+                <Input placeholder="confirm password" />
+                <Agreement>
+                    By creating an account, I consent to the processing of my personal
+                    data in accordance with the <b>PRIVACY POLICY</b>
+                </Agreement>
+                <Button>SIGN UP</Button>
+                </Form>
+            </Wrapper>
+        </Container>
     </>
   );
 };

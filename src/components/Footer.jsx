@@ -7,6 +7,7 @@ import RoomIcon from '@mui/icons-material/Room';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import styled from "styled-components";
 import { mobile } from "../responsive";
+import { Link } from "react-router-dom";
 
 const Container = styled.div`
   display: flex;
@@ -62,8 +63,16 @@ const List = styled.ul`
 
 const ListItem = styled.li`
   width: 50%;
-  margin-bottom: 10px;
+  font-size:0.9em ;
+  margin-bottom: 1rem;
+  &:hover {
+    color: "#FF8E00",
+  }
 `;
+const LinkStyle = {
+  color:"#000",
+  textDecoration:"none",
+};
 
 const Right = styled.div`
   flex: 1;
@@ -88,9 +97,9 @@ const Footer = () => {
       <Left>
         <Logo>LufuMart</Logo>
         <Desc>
-          There are many variations of passages of Lorem Ipsum available, but
-          the majority have suffered alteration in some form, by injected
-          humour, or randomised words which don’t look even slightly believable.
+          Welcome to the lufumart.com website (the "Site") operated within DRC Congo &
+          Kenya. We respect your privacy and want to protect your personal information.
+          To learn more, please read this Privacy Policy.
         </Desc>
         <SocialContainer>
           <SocialIcon color="3B5999">
@@ -108,18 +117,20 @@ const Footer = () => {
         </SocialContainer>
       </Left>
       <Center>
-        <Title>Explore</Title>
+        <Title>Explore LufuMart</Title>
         <List>
-          <ListItem>Home</ListItem>
-          <ListItem>Cart</ListItem>
-          <ListItem>Man Fashion</ListItem>
-          <ListItem>Woman Fashion</ListItem>
-          <ListItem>Accessories</ListItem>
-          <ListItem>My Account</ListItem>
-          <ListItem>Order Tracking</ListItem>
-          <ListItem>Wishlist</ListItem>
-          <ListItem>Wishlist</ListItem>
-          <ListItem>Terms</ListItem>
+          <ListItem><Link to="/" style={LinkStyle}>Home</Link></ListItem>
+          <ListItem><Link to="/cart" style={LinkStyle}>Cart</Link></ListItem>
+          <ListItem><Link to="/login" style={LinkStyle}>Login</Link></ListItem>
+          <ListItem><Link to="/register" style={LinkStyle}>Register</Link></ListItem>
+          <ListItem><Link to="/terms" style={LinkStyle}>Terms</Link></ListItem>
+          <ListItem><Link to="/privacy-policy" style={LinkStyle}>Privacy Policy</Link></ListItem>
+          <ListItem><Link to="/" style={LinkStyle}>About</Link></ListItem>
+          <ListItem><Link to="/" style={LinkStyle}>Trending</Link></ListItem>
+          <ListItem><Link to="/" style={LinkStyle}>New products</Link></ListItem>
+          <ListItem><Link to="/" style={LinkStyle}>Contact Us</Link></ListItem>
+          <ListItem><Link to="/" style={LinkStyle}>Other Services</Link></ListItem>
+          <ListItem><Link to="/" style={LinkStyle}>Shop All</Link></ListItem>
         </List>
       </Center>
       <Right>
