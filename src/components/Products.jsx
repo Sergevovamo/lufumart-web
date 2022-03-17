@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import styled from "styled-components";
-// import { popularProducts } from "../data";
+import { popularProducts } from "../data";
 import Product from "./Product";
 import { mobile } from "../responsive";
 import { Link } from "react-router-dom";
@@ -38,14 +38,14 @@ const ContainerHeadRight = styled.div`
 
 const Products = ({ cat, filters, sort }) => {
   const [products, setProducts] = useState([]);
-  const [filteredProducts, setFilteredProducts] = useState([]);
+  const [/*filteredProducts*/, setFilteredProducts] = useState([]);
 
   useEffect(() => {
     const getProducts = async () => {
       try {
         const res = await axios.get(
           cat
-            ? `http://localhost:5000/api/products?category=${cat}`
+            ? `https://api-v1.lufumart.com/api/v1/products?category=${cat}`
             : "https://api-v1.lufumart.com"
         );
         setProducts(res.data);
@@ -87,17 +87,10 @@ const Products = ({ cat, filters, sort }) => {
         <ContainerHeadLeft>Popular Products</ContainerHeadLeft>
         <ContainerHeadRight><Link to = "/product-list" style={{color: "black"}}>See All</Link></ContainerHeadRight>
       </ContainerHead>
-      {/* <Container>
+      <Container>
         {popularProducts.map((item) => (
           <Product item={item} key={item.id} />
         ))}
-      </Container> */}
-      <Container>
-      {cat
-        ? filteredProducts.map((item) => <Product item={item} key={item.id} />)
-        : products
-            .slice(0, 8)
-            .map((item) => <Product item={item} key={item.id} />)}
       </Container>
     </>
   );
